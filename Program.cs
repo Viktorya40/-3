@@ -1,5 +1,9 @@
 ﻿Console.Clear( );
-Console.Write("Введите трехзначное число: ");
-int n1 = Convert.ToInt32(Console.ReadLine());
-int n2 = n1 / 10 % 10;
-Console.WriteLine (n2);
+Console.Write("Введите число: ");
+int n = Convert.ToInt32(Console.ReadLine());
+if (n < 5 || n == 5)
+Console.WriteLine ($"Будни");
+else
+Console.WriteLine ($"Выходной");
+
+
