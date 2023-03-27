@@ -1,9 +1,11 @@
 ﻿Console.Clear( );
 Console.Write("Введите число: ");
 int n = Convert.ToInt32(Console.ReadLine());
-if (n < 5 || n == 5)
-Console.WriteLine ($"Будни");
+if (n < 100)
+    Console.WriteLine ("Третьей цифры нет");
 else
-Console.WriteLine ($"Выходной");
-
-
+{
+    while (n > 1000)
+    n = n / 10;
+    Console.WriteLine (n % 10);
+}
